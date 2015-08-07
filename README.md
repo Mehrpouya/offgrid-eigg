@@ -6,22 +6,22 @@ For more information about the project, please refer to [Life Off the Grid](http
 The webpages are in three parts:
 
 
-## Styling
-The css file is made by using [compas-style](http://compass-style.org/). The original styling is inside the sass folder and called offgrid.scss.
-The process styling file is inside css folder and called offgrid.css.
+## 1.Styling
+The css file is made by using [compas-style](http://compass-style.org/). The original styling is inside the [sass](https://github.com/Mehrpouya/offgrid-eigg/tree/gh-pages/sass) folder and called offgrid.scss.
+The processed style file is inside [css folder](https://github.com/Mehrpouya/offgrid-eigg/tree/gh-pages/css) and called offgrid.css
 
-## Script
+## 2.Script
 
-All scripts are inside offgrid/js folder and called main.js
+All scripts are inside [offgrid/js](https://github.com/Mehrpouya/offgrid-eigg/tree/gh-pages/offgrid/js) folder and called main.js
 
-## HTML
+## 3.HTML
 
 There are 7 html files each corresponding to a day in the week. for example offgridWed.html has the Wednesday stories.
 
 
-## Images
+#Resources
 
-The images are inside offgrid/img. Each day has its own folder. for example the images for Wednesday are inside offgrid/img/wednesday
+The images are inside [offgrid/img](https://github.com/Mehrpouya/offgrid-eigg/tree/gh-pages/offgrid/img). Each day has its own folder. for example the images for Wednesday story can be found at: [Wednesday](https://github.com/Mehrpouya/offgrid-eigg/tree/gh-pages/offgrid/img/wednesday) 
 
 If you'd like to learn more about the story api please refer to [odyssey.js documentation page](http://cartodb.github.io/odyssey.js/documentation/)
 
