@@ -1,0 +1,91 @@
+<!doctype><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Odyssey.js Slides</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/x-icon" href="http://cartodb.github.io/odyssey.js/sandbox/favicon.png">
+        <link rel="icon" type="image/png" href="http://cartodb.github.io/odyssey.js/sandbox/favicon.png">
+
+        <link rel="stylesheet" href="http://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/themes/css/cartodb.css">
+        <link rel="stylesheet" href="css/offgrid.css">
+        <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+        <script src="http://cartodb.github.io/odyssey.js/vendor/modernizr-2.6.2.min.js"></script>
+        <SCRIPT language="JavaScript">
+            var password;
+            var pass1 = "Lucy";
+            password = prompt('Please enter your password to view this page!', ' ');
+            if (password == pass1)
+                alert('Password Correct! Click OK to enter!');
+            else
+            {
+                window.location = "http://www.democracynow.org";
+            }
+        </SCRIPT>
+    </head>
+    <body>
+        <div id="days">
+            <ul id="daysList">
+                <li class="rot90"><a href="offgridSat.html">Sat</a></li>
+                <li class="rot90"><a href="offgridSun.html">Sun</a></li>
+                <li class="rot90"><a href="offgridMon.html">Mon</a></li>
+                <li class="rot90"><a href="offgridTue.html">Tue</a></li>
+                <li class="rot90"><a href="offgrid.html">Wed</a></li>
+                <li class="rot90"><a href="offgridThurs.html">Thur</a></li>
+                <li class="selected rot90"><a href="offgridFri.html">Fri</a></li>
+
+            </ul>
+        </div>
+        <div id="map" style="width: 100%; height: 100%;"></div>
+
+        <div id="slides_container" style="display:block;">
+            <div id="dots"></div>
+
+            <div id="slides"></div>
+
+            <ul id="navButtons">
+                <li><a class="prev"></a></li>
+                <li><a class="next"></a></li>
+            </ul>
+        </div>
+
+
+        <div id="credits">
+            <span class="title" id="title">Title</span>
+            <span class="author"><strong id="author">By Name using</strong> <a href="http://cartodb.github.io/odyssey.js/">Odyssey.js</a><span>
+                </span></span></div>
+
+        <script src="http://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/cartodb.js"></script>
+        <script src="http://cartodb.github.io/odyssey.js/dist/odyssey.js" charset="UTF-8"></script>
+
+        <script src="offgrid/js/main.js"></script>
+
+        <script type="text/javascript" src="http://fast.fonts.net/jsapi/3af16084-ba56-49ca-b37d-0b49b59e1927.js"></script>
+
+        <script type="text/template" id="md_template">```
+-title: "Off Grid"
+-author: "Off Grid"
+-baseurl: "http://a.tiles.mapbox.com/v3/jamiejcross.e6fccf91/{z}/{x}/{y}.png"
+-vizjson: "http://edinb.cartodb.com/api/v2/viz/2e93d7e6-3a69-11e4-84b8-0edbca4b5057/viz.json"
+```
+
+
+#Friday
+##A Simple Story?
+```
+- center: [56.8907, -366.1573]
+- zoom: 14
+```
+“Some people think Eigg just got a hand-out and built this renewable energy system and that was it, a simple story,” says Bean. 
+
+
+#Friday
+##'Making Things Happen'
+```
+- center: [56.9013, -366.2440]
+- zoom: 12
+```
+“Yes, there were non-governmental grants, yes there was some public money, but there was also a huge loan that we're still paying off. Today, in terms of running costs it's keeping itself going. But it took loads of work. People had to learn, we had to learn, how to work together. There hadn’t been projects like this on Eigg, projects involving so many people, for a long time…and it took a lot of effort to find ways of making things happen."
+
+        </script></body></html>

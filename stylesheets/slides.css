@@ -1,0 +1,381 @@
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=3af16084-ba56-49ca-b37d-0b49b59e1927");
+/* line 17, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "AleoRegular";
+  src: url(//cartodb-assets.global.ssl.fastly.net/odyssey.js/Aleo-Regular-webfont.eot);
+  src: url(//cartodb-assets.global.ssl.fastly.net/odyssey.js/Aleo-Regular-webfont.eot?#iefix) format('embedded-opentype'), url(//cartodb-assets.global.ssl.fastly.net/odyssey.js/Aleo-Regular-webfont.woff) format('woff'), url(//cartodb-assets.global.ssl.fastly.net/odyssey.js/Aleo-Regular-webfont.ttf) format('truetype'), url(//cartodb-assets.global.ssl.fastly.net/odyssey.js/Aleo-Regular-webfont.svg) format('svg');
+}
+
+@font-face {
+  font-family: "AleoBold";
+  src: url(//cartodb-assets.global.ssl.fastly.net/odyssey.js/Aleo-Bold-webfont.eot);
+  src: url(//cartodb-assets.global.ssl.fastly.net/odyssey.js/Aleo-Bold-webfont.eot?#iefix) format('embedded-opentype'), url(//cartodb-assets.global.ssl.fastly.net/odyssey.js/Aleo-Bold-webfont.woff) format('woff'), url(//cartodb-assets.global.ssl.fastly.net/odyssey.js/Aleo-Bold-webfont.ttf) format('truetype'), url(//cartodb-assets.global.ssl.fastly.net/odyssey.js/Aleo-Bold-webfont.svg) format('svg');
+}
+
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url(//cartodb-assets.global.ssl.fastly.net/odyssey.js/fbc6b03a-b3a1-427c-a884-053deca3a53c.eot);
+  src: url(//cartodb-assets.global.ssl.fastly.net/odyssey.js/fbc6b03a-b3a1-427c-a884-053deca3a53c.eot?#iefix) format('embedded-opentype'), url(//cartodb-assets.global.ssl.fastly.net/odyssey.js/d999c07b-a049-4eb5-b8a6-4f36ae25e67e.woff) format('woff'), url(//cartodb-assets.global.ssl.fastly.net/odyssey.js/4d4a75f5-d32a-4a09-8665-133afd39cc37.ttf) format('truetype'), url(//cartodb-assets.global.ssl.fastly.net/odyssey.js/8152bc4e-d700-4c78-b6be-326893e6f53f.svg) format('svg');
+}
+
+/* line 10, ../sass/slides.scss */
+body {
+  overflow: hidden;
+}
+
+/* line 14, ../sass/slides.scss */
+#map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 16, ../sass/slides.scss */
+#slides_container {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 620px;
+  padding: 40px;
+  padding-right: 20px;
+  background-color: #aaa;
+  background-color: rgba(200, 200, 200, 0.7);
+  z-index: 10;
+}
+/* line 28, ../sass/slides.scss */
+#slides_container.visible {
+  display: block !important;
+}
+/* line 32, ../sass/slides.scss */
+#slides_container .slide {
+  display: none;
+  overflow-y: auto;
+  padding-right: 20px;
+}
+/* line 37, ../sass/slides.scss */
+#slides_container .slide.selected {
+  display: block !important;
+}
+/* line 42, ../sass/slides.scss */
+#slides_container .slide.scrolled img {
+  margin: 20px 0;
+  width: 100%;
+}
+/* line 48, ../sass/slides.scss */
+#slides_container .slide strong {
+  font-family: "AleoBold";
+}
+/* line 52, ../sass/slides.scss */
+#slides_container .slide em {
+  font-style: italic;
+}
+/* line 57, ../sass/slides.scss */
+#slides_container h1, #slides_container h2, #slides_container h3, #slides_container h4, #slides_container h5, #slides_container h6 {
+  font-family: 'Proxima N W01 Bold', Sans-serif;
+  color: #333;
+  font-size: 45px;
+}
+/* line 63, ../sass/slides.scss */
+#slides_container h1:after, #slides_container h2:after, #slides_container h3:after, #slides_container h4:after, #slides_container h5:after, #slides_container h6:after {
+  display: block;
+  margin: 20px 0 20px 0;
+  height: 3px;
+  content: " ";
+  text-shadow: none;
+  background-color: #333;
+  width: 140px;
+}
+/* line 74, ../sass/slides.scss */
+#slides_container h2, #slides_container h3, #slides_container h4, #slides_container h5, #slides_container h6 {
+  font-size: 19px;
+}
+/* line 77, ../sass/slides.scss */
+#slides_container h2:after, #slides_container h3:after, #slides_container h4:after, #slides_container h5:after, #slides_container h6:after {
+  height: 1px;
+  margin: 18px 0 18px 0;
+  width: 180px;
+}
+/* line 85, ../sass/slides.scss */
+#slides_container p, #slides_container span {
+  font-family: AleoRegular, Serif;
+  color: #333;
+  font-size: 15px;
+  line-height: 21px;
+  margin: 0 0 19px 0;
+}
+/* line 93, ../sass/slides.scss */
+#slides_container a {
+  color: #FF7373;
+  text-decoration: none;
+}
+/* line 97, ../sass/slides.scss */
+#slides_container a:hover {
+  text-decoration: underline;
+}
+
+/* line 103, ../sass/slides.scss */
+#front_slide.hidden {
+  display: none;
+}
+
+/* line 107, ../sass/slides.scss */
+#dots {
+  margin: 0 0 20px 0;
+}
+/* line 110, ../sass/slides.scss */
+#dots li {
+  display: inline;
+}
+/* line 113, ../sass/slides.scss */
+#dots li a {
+  opacity: 0.2;
+  color: #333;
+}
+/* line 117, ../sass/slides.scss */
+#dots li a:before {
+  content: ' \25CF';
+  font-size: 16px;
+}
+/* line 122, ../sass/slides.scss */
+#dots li a.active {
+  opacity: 1;
+}
+/* line 123, ../sass/slides.scss */
+#dots li a:hover {
+  opacity: 1;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* line 134, ../sass/slides.scss */
+#slides_container img {
+  margin: 20px 0;
+  max-width: 100%;
+}
+
+/* line 140, ../sass/slides.scss */
+ul#navButtons {
+  margin: 20px 0 0 0;
+}
+/* line 143, ../sass/slides.scss */
+ul#navButtons li {
+  width: 30px;
+  display: inline;
+}
+/* line 147, ../sass/slides.scss */
+ul#navButtons li a {
+  display: inline-block;
+  width: 23px;
+  height: 30px;
+  background: transparent url('/images/navBtns.png') no-repeat -10px 0;
+}
+/* line 152, ../sass/slides.scss */
+ul#navButtons li a:hover {
+  background-position: -10px -30px;
+  cursor: pointer;
+}
+/* line 154, ../sass/slides.scss */
+ul#navButtons li a.next {
+  background: transparent url('/images/navBtns.png') no-repeat -30px 0;
+}
+/* line 156, ../sass/slides.scss */
+ul#navButtons li a.next:hover {
+  background-position: -30px -30px;
+}
+
+/* line 162, ../sass/slides.scss */
+div#credits {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  background-color: #FFF;
+  z-index: 1000001;
+}
+/* line 170, ../sass/slides.scss */
+div#credits a {
+  color: #ff7373;
+}
+/* line 173, ../sass/slides.scss */
+div#credits span {
+  padding: 18px 0 0 0;
+  position: absolute;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+/* line 179, ../sass/slides.scss */
+div#credits span.title {
+  left: 40px;
+  font-family: 'Proxima N W01 Bold', Sans-serif;
+  color: #333;
+}
+/* line 185, ../sass/slides.scss */
+div#credits span.author {
+  right: 40px;
+  font-family: AleoRegular, Serif;
+  color: #999;
+  letter-spacing: 2px;
+  font-size: 10px;
+  text-align: right;
+}
+
+/* line 197, ../sass/slides.scss */
+.slide-tip {
+  position: absolute;
+  top: -18px;
+  width: 3px;
+  height: 37px;
+  border: 3px solid transparent;
+  border-top: 0;
+  border-bottom-color: #ddd;
+  text-align: center;
+}
+/* line 208, ../sass/slides.scss */
+.slide-tip:hover .tooltip {
+  display: inline-block !important;
+}
+/* line 212, ../sass/slides.scss */
+.slide-tip:hover:after {
+  background: #ccc;
+  width: 3px;
+}
+/* line 218, ../sass/slides.scss */
+.slide-tip:after {
+  content: "";
+  display: inline-block;
+  background: #ddd;
+  width: 1px;
+  height: 40px;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+/* line 227, ../sass/slides.scss */
+.slide-tip .tooltip {
+  position: absolute;
+  display: none;
+  background: rgba(0, 0, 0, 0.85);
+  bottom: 50px;
+  max-width: 200px;
+  padding: 10px;
+  margin-left: -17px;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  color: #FFF;
+  line-height: 1;
+  text-align: left;
+  font-size: 12px;
+  white-space: nowrap;
+}
+/* line 244, ../sass/slides.scss */
+.slide-tip .tooltip h1, .slide-tip .tooltip p {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  color: #EEE;
+  font-weight: normal;
+  line-height: 1.1;
+  width: auto;
+}
+/* line 255, ../sass/slides.scss */
+.slide-tip .tooltip h1 {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 11px;
+}
+/* line 261, ../sass/slides.scss */
+.slide-tip .tooltip p {
+  white-space: nowrap;
+}
+/* line 265, ../sass/slides.scss */
+.slide-tip .tooltip:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 10px;
+  border-top: 5px solid rgba(0, 0, 0, 0.85);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+
+/* line 278, ../sass/slides.scss */
+div.cartodb-timeslider .ui-slider .ui-slider-range {
+  background-color: #FF7373;
+}
+
+/* line 282, ../sass/slides.scss */
+.cartodb-timeslider {
+  bottom: 50px !important;
+  left: 40px !important;
+}

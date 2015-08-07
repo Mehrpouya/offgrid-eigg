@@ -1,0 +1,107 @@
+<!doctype><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Odyssey.js Torque</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://maps.google.com/maps/api/js?v=3&sensor=false"></script>
+        <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.0/mapbox.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.0/mapbox.css' rel='stylesheet' />
+        <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.4"></script>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link rel="icon" type="image/x-icon" href="http://cartodb.github.io/odyssey.js/sandbox/favicon.png">
+        <link rel="icon" type="image/png" href="http://cartodb.github.io/odyssey.js/sandbox/favicon.png">
+
+        <link rel="stylesheet" href="http://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/themes/css/cartodb.css">
+        <link rel="stylesheet" href="css/offgrid.css">
+
+        <script src="http://cartodb.github.io/odyssey.js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <div id="days">
+            <ul id="daysList">
+                <li class="selected rot90">Wed</li>
+                <li class="rot90">Thur</li>
+                <li class="rot90">Fri</li>
+                <li class="rot90">Sat</li>
+                <li class="rot90">Sun</li>
+                <li class="rot90">Mon</li>
+                <li class="rot90">Tue</li>
+
+            </ul>
+        </div>
+        <div id="map" class="leaflet-container leaflet-fade-anim" style="width: 100%; height: 100%;" tabindex="0">
+            <div id="slides_container" style="">
+                <div id="dots"></div>
+                <div id="slides"></div>
+                <ul id="navButtons">
+                    <li><a class="prev"></a></li>
+                    <li><a class="next"></a></li>
+                </ul>
+            </div>
+
+            <div id="credits">
+                <span class="title" id="title">Title</span>
+                <span class="author"><b id="author">By Name using</b> <a href="#">Odyssey.js</a><span>
+                    </span></span></div>
+
+            <script src="http://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/cartodb.js"></script>
+            <script src="http://cartodb.github.io/odyssey.js/dist/odyssey.js" charset="UTF-8"></script>
+            <script src="offgrid/js/main.js"></script>
+            <script type="text/template" id="md_template">
+                        ```
+-title: "Odysse example FTW"
+-author: "CartoDB"
+```
+
+#Your first odyssey.js story
+```
+- center: [37.7620, -122.4385]
+- zoom: 9
+L.marker([37.7620, -122.4385]).actions.addRemove(S.map)
+```
+
+Move the map around and save the position by clicking on "ADD > Move map to the current position". As you can see, now we are highlighting San Francisco.
+
+Then add here the description for your slide so it's shown on the left side box.
+
+
+#How to add more states
+```
+- center: [40.7348, -73.9970]
+- zoom: 9
+L.marker([40.7348, -73.9970]).actions.addRemove(S.map)
+```
+
+By adding new [Markdown] (http://daringfireball.net/projects/markdown/]) h1 elements (#) you add new states to your story.
+
+
+#Adding images to your story
+```
+- center: [40.7365, -73.9982]
+- zoom: 13
+```
+
+By default, images are also supported. 
+
+![New York](http://www.boston-discovery-guide.com/image-files/new-york-1.jpg)
+
+#Exporting your story
+```
+- center: [40.4469, -28.5645]
+- zoom: 3
+```
+
+You have different options for exporting your odyssey.js visualization. You can either embed this using an iframe, publishing with a click on bl.ocks or just share the URL of this visualization.
+
+If you want to customize it further, you can download the generated source code by clicking on the button below.
+
+#Advanced users
+
+Check out our [documentation](http://docs.url) to learn how to use odyssey to create more custom things. It's crazy the amount of cool things that can be done with the library.
+
+Also if you are a developer, take a look at our contributing guideline so you can push code to the actual library.
+
+Cheers!
+

@@ -1,0 +1,105 @@
+<!doctype><html><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Odyssey.js Slides</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/x-icon" href="http://cartodb.github.io/odyssey.js/sandbox/favicon.png">
+  <link rel="icon" type="image/png" href="http://cartodb.github.io/odyssey.js/sandbox/favicon.png">
+
+  <link rel="stylesheet" href="http://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/themes/css/cartodb.css">
+  <link rel="stylesheet" href="css/offgrid.css">
+  <script src="http://cartodb.github.io/odyssey.js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+  <div id="map" style="width: 100%; height: 100%;"></div>
+
+  <div id="slides_container" style="display:block;">
+    <div id="dots"></div>
+
+    <div id="slides"></div>
+
+    <ul id="navButtons">
+      <li><a class="prev"></a></li>
+      <li><a class="next"></a></li>
+    </ul>
+  </div>
+
+  <div id="credits">
+    <span class="title" id="title">Title</span>
+    <span class="author"><strong id="author">By Name using</strong> <a href="http://cartodb.github.io/odyssey.js/">Odyssey.js</a><span>
+  </span></span></div>
+
+  <script src="http://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/cartodb.js"></script>
+  <script src="http://cartodb.github.io/odyssey.js/dist/odyssey.js" charset="UTF-8"></script>
+  <script type="text/javascript" src="offgrid/js/main.js">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-20934186-21', 'cartodb.github.io');
+    ga('send', 'pageview');
+  </script>
+
+  <script type="text/javascript" src="http://fast.fonts.net/jsapi/3af16084-ba56-49ca-b37d-0b49b59e1927.js"></script>
+
+<script type="text/template" id="md_template">```
+-baseurl: "http://a.tiles.mapbox.com/v3/jamiejcross.e6fccf91/{z}/{x}/{y}.png"
+-vizjson: "http://edinb.cartodb.com/api/v2/viz/2e93d7e6-3a69-11e4-84b8-0edbca4b5057/viz.json"
+-title: "Odyssey example FTW"
+-author: "CartoDB"
+```
+
+#Your first odyssey.js story
+```
+- center: [37.7620, -122.4385]
+- zoom: 9
+L.marker([37.7620, -122.4385]).actions.addRemove(S.map)
+```
+
+Move the map around and save the position by clicking on "ADD > Move map to the current position". As you can see, now we are highlighting San Francisco.
+
+Then add here the description for your slide so it's shown on the left side box.
+
+
+#How to add more states
+```
+- center: [40.7348, -73.9970]
+- zoom: 9
+L.marker([40.7348, -73.9970]).actions.addRemove(S.map)
+```
+
+By adding new [Markdown] (http://daringfireball.net/projects/markdown/]) h1 elements (#) you add new states to your story.
+
+
+#Adding images to your story
+```
+- center: [40.7365, -73.9982]
+- zoom: 13
+```
+
+By default, images are also supported. 
+
+![New York](http://www.boston-discovery-guide.com/image-files/new-york-1.jpg)
+
+#Exporting your story
+```
+- center: [40.4469, -28.5645]
+- zoom: 3
+```
+
+You have different options for exporting your odyssey.js visualization. You can either embed this using an iframe, publishing with a click on bl.ocks or just share the URL of this visualization.
+
+If you want to customize it further, you can download the generated source code by clicking on the button below.
+
+#Advanced users
+
+Check out our [documentation](/odyssey.js/documentation/) to learn how to use odyssey to create more custom things. It's crazy the amount of cool things that can be done with the library.
+
+Also if you are a developer, take a look at our contributing guideline so you can push code to the actual library.
+
+Cheers!
+</script></body></html>

@@ -1,0 +1,500 @@
+/* line 17, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "AleoRegular";
+  src: url('/stylesheets/fonts/aleo-regular-webfont.eot');
+  src: url('/stylesheets/fonts/aleo-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/stylesheets/fonts/aleo-regular-webfont.woff') format('woff'), url('/stylesheets/fonts/aleo-regular-webfont.ttf') format('truetype'), url('/stylesheets/fonts/aleo-regular-webfont.svg') format('svg');
+}
+
+@font-face {
+  font-family: "AleoBold";
+  src: url('/stylesheets/fonts/aleo-bold-webfont.eot');
+  src: url('/stylesheets/fonts/aleo-bold-webfont.eot?#iefix') format('embedded-opentype'), url('/stylesheets/fonts/aleo-bold-webfont.woff') format('woff'), url('/stylesheets/fonts/aleo-bold-webfont.ttf') format('truetype'), url('/stylesheets/fonts/aleo-bold-webfont.svg') format('svg');
+}
+
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url('/stylesheets/fonts/ProximaNova-bold.eot');
+  src: url('/stylesheets/fonts/ProximaNova-bold.eot?#iefix') format('embedded-opentype'), url('/stylesheets/fonts/ProximaNova-bold.woff') format('woff'), url('/stylesheets/fonts/ProximaNova-bold.ttf') format('truetype'), url('/stylesheets/fonts/ProximaNova-bold.svg') format('svg');
+}
+
+/* line 9, ../sass/offgrid_1.scss */
+body {
+  font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  overflow: hidden;
+}
+
+/* line 14, ../sass/offgrid_1.scss */
+#map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 16, ../sass/offgrid_1.scss */
+#slides_container {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  top: 50px;
+  left: 50px;
+  width: 500px;
+  height: 80%;
+  padding: 40px;
+  border-radius: 10px;
+  padding-right: 20px;
+  /*height: 90%;*/
+  /*background-color: #AAA;*/
+  /*background-color: rgba(200,200,200,0.7);*/
+  color: #000;
+  z-index: 100;
+  /*line-height: 1.5;*/
+}
+/* line 34, ../sass/offgrid_1.scss */
+#slides_container.visible {
+  display: block !important;
+}
+/* line 38, ../sass/offgrid_1.scss */
+#slides_container .slide {
+  width: 520px;
+  display: none;
+  overflow-y: scroll;
+  /*line-height: 1.5;*/
+  padding-right: 20px;
+  /*text-align: left;*/
+}
+/* line 46, ../sass/offgrid_1.scss */
+#slides_container .slide.selected {
+  display: block !important;
+}
+/* line 51, ../sass/offgrid_1.scss */
+#slides_container .slide.scrolled img {
+  margin: 20px 0;
+  width: 100%;
+}
+/* line 57, ../sass/offgrid_1.scss */
+#slides_container .slide strong {
+  font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/* line 61, ../sass/offgrid_1.scss */
+#slides_container .slide em {
+  font-style: italic;
+  /*line-height: 1.5;*/
+}
+/* line 67, ../sass/offgrid_1.scss */
+#slides_container h1, #slides_container h2, #slides_container h3, #slides_container h4, #slides_container h5, #slides_container h6 {
+  font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #000;
+  font-size: 45px;
+  /*line-height: 1.5;*/
+}
+/* line 74, ../sass/offgrid_1.scss */
+#slides_container h1:after, #slides_container h2:after, #slides_container h3:after, #slides_container h4:after, #slides_container h5:after, #slides_container h6:after {
+  display: block;
+  margin: 20px 0 20px 0;
+  height: 3px;
+  content: " ";
+  text-shadow: none;
+  background-color: #333;
+  width: 140px;
+}
+/* line 85, ../sass/offgrid_1.scss */
+#slides_container h2, #slides_container h3, #slides_container h4, #slides_container h5, #slides_container h6 {
+  font-size: 19px;
+  /*line-height: 1.5;*/
+}
+/* line 89, ../sass/offgrid_1.scss */
+#slides_container h2:after, #slides_container h3:after, #slides_container h4:after, #slides_container h5:after, #slides_container h6:after {
+  height: 1px;
+  margin: 18px 0 18px 0;
+  width: 180px;
+}
+/* line 97, ../sass/offgrid_1.scss */
+#slides_container p, #slides_container span {
+  /*font-family: AleoRegular, Serif;*/
+  font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #000;
+  font-size: 20px;
+  line-height: 1.8;
+  text-align: left;
+  /*overflow: auto;*/
+  /*line-height: 21px;*/
+  /*margin: 0 0 19px 0;*/
+}
+/* line 109, ../sass/offgrid_1.scss */
+#slides_container a {
+  color: #FF7373;
+  text-decoration: none;
+}
+/* line 113, ../sass/offgrid_1.scss */
+#slides_container a:hover {
+  text-decoration: underline;
+}
+
+/* line 119, ../sass/offgrid_1.scss */
+#front_slide.hidden {
+  display: none;
+}
+
+/* line 123, ../sass/offgrid_1.scss */
+#dots {
+  margin: 0 0 20px 0;
+}
+/* line 126, ../sass/offgrid_1.scss */
+#dots li {
+  display: inline;
+}
+/* line 129, ../sass/offgrid_1.scss */
+#dots li a {
+  opacity: 0.2;
+  color: #333;
+}
+/* line 133, ../sass/offgrid_1.scss */
+#dots li a:before {
+  content: ' \25CF';
+  font-size: 16px;
+}
+/* line 138, ../sass/offgrid_1.scss */
+#dots li a.active {
+  opacity: 1;
+}
+/* line 139, ../sass/offgrid_1.scss */
+#dots li a:hover {
+  opacity: 1;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* line 148, ../sass/offgrid_1.scss */
+.leaflet-control-container * {
+  display: none;
+}
+
+/* line 152, ../sass/offgrid_1.scss */
+.leaflet-control-container {
+  display: none;
+}
+
+/* line 156, ../sass/offgrid_1.scss */
+#slides_container img {
+  position: fixed;
+  top: 200px;
+  right: 20px;
+  z-index: 100;
+  width: 500px;
+  margin: 20px 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+  -moz-opacity: 0.6;
+  -khtml-opacity: 0.6;
+}
+
+/* line 170, ../sass/offgrid_1.scss */
+ul#navButtons {
+  margin: 20px 0 0 0;
+}
+/* line 173, ../sass/offgrid_1.scss */
+ul#navButtons li {
+  width: 30px;
+  display: inline;
+}
+/* line 177, ../sass/offgrid_1.scss */
+ul#navButtons li a {
+  display: inline-block;
+  width: 23px;
+  height: 30px;
+  background: transparent url('/images/navBtns.png') no-repeat -10px 0;
+}
+/* line 182, ../sass/offgrid_1.scss */
+ul#navButtons li a:hover {
+  background-position: -10px -30px;
+  cursor: pointer;
+}
+/* line 184, ../sass/offgrid_1.scss */
+ul#navButtons li a.next {
+  background: transparent url('/images/navBtns.png') no-repeat -30px 0;
+}
+/* line 186, ../sass/offgrid_1.scss */
+ul#navButtons li a.next:hover {
+  background-position: -30px -30px;
+}
+
+/* line 192, ../sass/offgrid_1.scss */
+div#credits {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  background-color: #FFF;
+  z-index: 100;
+}
+/* line 200, ../sass/offgrid_1.scss */
+div#credits a {
+  color: #ff7373;
+}
+/* line 203, ../sass/offgrid_1.scss */
+div#credits span {
+  padding: 18px 0 0 0;
+  position: absolute;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+/* line 209, ../sass/offgrid_1.scss */
+div#credits span.title {
+  left: 40px;
+  font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #333;
+}
+/* line 215, ../sass/offgrid_1.scss */
+div#credits span.author {
+  right: 40px;
+  font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #999;
+  letter-spacing: 2px;
+  font-size: 10px;
+  text-align: right;
+}
+
+/* line 227, ../sass/offgrid_1.scss */
+.slide-tip {
+  position: absolute;
+  top: -18px;
+  width: 3px;
+  height: 37px;
+  border: 3px solid transparent;
+  border-top: 0;
+  border-bottom-color: #ddd;
+  text-align: center;
+}
+/* line 238, ../sass/offgrid_1.scss */
+.slide-tip:hover .tooltip {
+  display: inline-block !important;
+}
+/* line 242, ../sass/offgrid_1.scss */
+.slide-tip:hover:after {
+  background: #ccc;
+  width: 3px;
+}
+/* line 248, ../sass/offgrid_1.scss */
+.slide-tip:after {
+  content: "";
+  display: inline-block;
+  background: #ddd;
+  width: 1px;
+  height: 40px;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+/* line 257, ../sass/offgrid_1.scss */
+.slide-tip .tooltip {
+  position: absolute;
+  display: none;
+  background: rgba(0, 0, 0, 0.85);
+  bottom: 50px;
+  max-width: 200px;
+  padding: 10px;
+  margin-left: -17px;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  color: #FFF;
+  line-height: 1;
+  text-align: left;
+  font-size: 12px;
+  white-space: initial;
+}
+/* line 274, ../sass/offgrid_1.scss */
+.slide-tip .tooltip h1, .slide-tip .tooltip p {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  color: #EEE;
+  font-weight: normal;
+  line-height: 1.5;
+  width: auto;
+  white-space: initial;
+}
+/* line 287, ../sass/offgrid_1.scss */
+.slide-tip .tooltip h1 {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 11px;
+  white-space: pre;
+}
+/* line 294, ../sass/offgrid_1.scss */
+.slide-tip .tooltip p {
+  white-space: pre;
+  line-height: 1.5;
+}
+/* line 301, ../sass/offgrid_1.scss */
+.slide-tip .tooltip:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 10px;
+  border-top: 5px solid rgba(0, 0, 0, 0.85);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  white-space: pre;
+}
+
+/* line 314, ../sass/offgrid_1.scss */
+div.cartodb-timeslider {
+  display: none;
+}
+
+/* line 317, ../sass/offgrid_1.scss */
+div.cartodb-timeslider .ui-slider .ui-slider-range {
+  background-color: #FF7373;
+}
+
+/* line 321, ../sass/offgrid_1.scss */
+.cartodb-timeslider {
+  bottom: 50px !important;
+  left: 40px !important;
+}
+
+/* line 327, ../sass/offgrid_1.scss */
+#days {
+  position: fixed;
+  font-size: 15px;
+  font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  left: 20px;
+  top: 50px;
+  z-index: 110;
+  text-align: left;
+}
+
+/* line 339, ../sass/offgrid_1.scss */
+.rot90 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+}
+
+/* line 346, ../sass/offgrid_1.scss */
+#days ul li.selected {
+  color: red;
+}
+
+/* line 351, ../sass/offgrid_1.scss */
+#days ul li.selected {
+  color: red;
+}
+
+/* line 355, ../sass/offgrid_1.scss */
+#days ul li {
+  margin-top: 50px;
+}
+
+/* line 361, ../sass/offgrid_1.scss */
+#progress {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  z-index: 100;
+}
+
+/* line 367, ../sass/offgrid_1.scss */
+#progress li {
+  display: inline-block;
+}
+
+/* line 371, ../sass/offgrid_1.scss */
+#progress li a {
+  display: block;
+  width: 9px;
+  height: 9px;
+  margin: 10px;
+  color: black;
+  /*background: url(http://vizzuality.github.io/rollingstonesmap/img/timeBullet.png) 0 0 no-repeat;*/
+}
+
+/* line 386, ../sass/offgrid_1.scss */
+#progress li.active a {
+  color: red;
+  /*background: url(http://vizzuality.github.io/rollingstonesmap/img/timeBullet.png) 0 -9px no-repeat;*/
+}
+
+/* line 390, ../sass/offgrid_1.scss */
+.arrowBig {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+/* line 395, ../sass/offgrid_1.scss */
+.arrowBig:hover {
+  color: red;
+}
